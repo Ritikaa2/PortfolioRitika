@@ -74,6 +74,71 @@ a { text-decoration:none; color:inherit }
 #cr { width:30px;height:30px;border:1.5px solid var(--c1);border-radius:50%;
   position:fixed;top:0;left:0;pointer-events:none;z-index:9998;opacity:.4; }
 
+
+  /* ══════════════════════════════════════
+   EDUCATION
+══════════════════════════════════════ */
+#education { background:var(--surface) }
+
+.ed-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:1.6rem;
+}
+
+.ed-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:1.8rem;
+  display:flex;
+  gap:1.2rem;
+  align-items:flex-start;
+  transition:transform .28s,border-color .28s,box-shadow .28s;
+}
+
+.ed-card:hover {
+  transform:translateY(-5px);
+  border-color:var(--border-c);
+  box-shadow:0 16px 48px rgba(0,0,0,.25);
+}
+
+.ed-ico {
+  width:50px;
+  height:50px;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.5rem;
+  flex-shrink:0;
+}
+
+.ed-degree {
+  font-size:.95rem;
+  font-weight:700;
+  margin-bottom:.2rem;
+}
+
+.ed-inst {
+  font-size:.82rem;
+  color:var(--c1);
+  margin-bottom:.3rem;
+}
+
+.ed-meta {
+  font-family:'Fira Code',monospace;
+  font-size:.65rem;
+  color:var(--muted);
+  margin-bottom:.6rem;
+}
+
+.ed-desc {
+  font-size:.8rem;
+  color:var(--text2);
+  line-height:1.6;
+  font-weight:300;
+}
 /* ══════════════════════════════════════
    NAVBAR
 ══════════════════════════════════════ */
@@ -521,6 +586,7 @@ footer { background:var(--bg);border-top:1px solid var(--border);padding:2rem 2.
     <a href="#skills"       class="na">Skills</a>
     <a href="#projects"     class="na">Projects</a>
     <a href="#certificates" class="na">Certificates</a>
+    <a href="#education" class="na">Education</a>
     <a href="#achievements" class="na">Achievements</a>
     <a href="#contact"      class="na">Contact</a>
   </div>
@@ -543,7 +609,7 @@ footer { background:var(--bg);border-top:1px solid var(--border);padding:2rem 2.
     <div>
       <div class="h-tag rv"><span class="h-tag-dot"></span>Available for Opportunities</div>
       <h1 class="h-hi rv d1">Hi, I'm<br><span class="h-name">Ritika</span></h1>
-      <div class="h-role rv d2">Full Stack Developer</div>
+      <div class="h-role rv d2">Aspiring Full Stack Developer</div>
       <p class="h-desc rv d3">
   I'm a passionate and creative Full Stack Developer who enjoys turning ideas into real, impactful web applications. 
   I work with technologies like HTML, CSS, JavaScript, React, Tailwind CSS, and Node.js to build modern and responsive solutions.
@@ -849,7 +915,7 @@ footer { background:var(--bg);border-top:1px solid var(--border);padding:2rem 2.
 <section id="certificates">
   <div class="con">
     <div class="s-eye rv">Verified Skills</div>
-    <h2 class="s-h rv">My <em>Certificates</em></h2>
+    <h2 class="s-h rv">My <em>Certificates/Training</em></h2>
     <div class="ct-grid">
 
       <a href="https://www.hackerrank.com/certificates/0130f9e78d34" target="_blank" class="ct-card rv d1">
@@ -895,7 +961,60 @@ footer { background:var(--bg);border-top:1px solid var(--border);padding:2rem 2.
   </div>
   <div class="sdiv"></div>
 </section>
+<!-- ══════ EDUCATION ══════ -->
+<section id="education">
+  <div class="con">
+    <div class="s-eye rv">Academic Background</div>
+    <h2 class="s-h rv">My <em>Education</em></h2>
 
+    <div class="ed-grid">
+
+      <!-- B.Tech -->
+      <div class="ed-card rv d1">
+        <div class="ed-ico" style="background:rgba(0,230,180,.08)">🎓</div>
+        <div>
+          <div class="ed-degree">B.Tech in Computer Science</div>
+          <div class="ed-inst">Lovely Professional University, Punjab</div>
+          <div class="ed-meta">2023 – Present</div>
+          <div class="ed-desc">
+            CGPA: <strong>7.12</strong> <br>
+            Focused on Full Stack Development, Data Structures & Algorithms.
+          </div>
+        </div>
+      </div>
+
+      <!-- 12th -->
+      <div class="ed-card rv d2">
+        <div class="ed-ico" style="background:rgba(255,180,0,.08)">📚</div>
+        <div>
+          <div class="ed-degree">Senior Secondary (12th)</div>
+          <div class="ed-inst">Meritorious School, Amritsar</div>
+          <div class="ed-meta">2021 – 2023</div>
+          <div class="ed-desc">
+            Percentage: <strong>98%</strong> <br>
+            Achieved excellent academic performance with strong fundamentals.
+          </div>
+        </div>
+      </div>
+
+      <!-- 10th -->
+      <div class="ed-card rv d3">
+        <div class="ed-ico" style="background:rgba(97,218,251,.08)">🏫</div>
+        <div>
+          <div class="ed-degree">Matriculation (10th)</div>
+          <div class="ed-inst">Senior Secondary Smart School</div>
+          <div class="ed-meta">2020 – 2021</div>
+          <div class="ed-desc">
+            Percentage: <strong>100%</strong> <br>
+            Achieved perfect score demonstrating academic excellence.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="sdiv"></div>
+</section>
 <!-- ══════ ACHIEVEMENTS ══════ -->
 <section id="achievements">
   <div class="con">
